@@ -210,4 +210,11 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+    /**
+     * Creating method for display name in profile of main.php file(backend)
+     */
+    public function getDisplayName()
+    {
+        return Yii::$app->user->identity->username;
+    }
 }

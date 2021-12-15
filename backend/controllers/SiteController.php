@@ -24,7 +24,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login', 'forgot-password', 'error'],
                         'allow' => true,
                     ],
                     [
@@ -88,6 +88,16 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+    }
+
+
+    /**
+     * Forgot password action
+     */
+
+    public function actionForgotPassword()
+    {
+        return "Forgot Password";
     }
 
     /**
