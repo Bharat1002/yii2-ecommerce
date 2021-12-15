@@ -213,7 +213,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * Creating method for display name in profile of main.php file(backend)
      */
-    public function getDisplayName()
+    public static function getDisplayName()
     {
         return Yii::$app->user->identity->username;
     }
