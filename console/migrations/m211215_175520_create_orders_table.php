@@ -24,7 +24,7 @@ class m211215_175520_create_orders_table extends Migration
             'email' => $this->string(255)->notNull(),
             'transaction_id' => $this->string(255),
             'created_at' => $this->integer(11),
-            'created_by' => $this->(11)(),
+            'created_by' => $this->integer(11),
         ]);
 
         // creates index for column `created_by`

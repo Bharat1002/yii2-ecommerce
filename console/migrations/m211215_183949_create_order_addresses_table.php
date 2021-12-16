@@ -16,7 +16,7 @@ class m211215_183949_create_order_addresses_table extends Migration
     public function safeUp()
     {
         $this->createTable('{{%order_addresses}}', [
-            'order_id' => $this->primaryKey(),
+            'order_id' => $this->integer()->notNull(),
             'address' => $this->string(255)->notNull(),
             'city' => $this->string(255)->notNull(),
             'state' => $this->string(255)->notNull(),
@@ -31,12 +31,14 @@ class m211215_183949_create_order_addresses_table extends Migration
             'order_id'
         );
 
+        $this->addPrimaryKey('PK_order_addresses', '{{%order_addresses}}', 'order_id');
+
         // add foreign key for table `{{%order}}`
         $this->addForeignKey(
             '{{%fk-order_addresses-order_id}}',
             '{{%order_addresses}}',
             'order_id',
-            '{{%order}}',
+            '{{%orders}}',
             'id',
             'CASCADE'
         );
