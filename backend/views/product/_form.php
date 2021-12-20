@@ -12,7 +12,7 @@ use dosamigos\ckeditor\CKEditor;
 <div class="product-form">
 
     <?php $form = ActiveForm::begin([
-        'options' => ['enctype' => 'multipart/form-data']
+        'options' => ['enctype' => 'multipart/form-data'],
     ]); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
@@ -37,7 +37,7 @@ use dosamigos\ckeditor\CKEditor;
             'inputOptions' => [
                 'class' => 'custom-file-input'
             ]
-    ])->fileInput() ?>
+    ])->textInput(['type' => 'file']) ?>
 
     <?= $form->field($model, 'price')->textInput([
         'maxlength' => true,

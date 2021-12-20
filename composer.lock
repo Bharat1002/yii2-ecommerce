@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5525a49690832b4f71fe2efcd7ca93b3",
+    "content-hash": "80a5f60821bbb4c1cfedb9ad62ad5c30",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -217,7 +217,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -459,7 +459,7 @@
             "version": "3.3.11",
             "source": {
                 "type": "git",
-                "url": "git@github.com:RobinHerbots/Inputmask.git",
+                "url": "https://github.com/RobinHerbots/Inputmask.git",
                 "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
@@ -1276,6 +1276,53 @@
                 "source": "https://github.com/FortAwesome/Font-Awesome/tree/v4.7.0"
             },
             "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
+            "name": "lubosdz/yii2-template-engine",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lubosdz/yii2-template-engine.git",
+                "reference": "8da8fc77f520f61aebb8140c00c4f8554a33f178"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lubosdz/yii2-template-engine/zipball/8da8fc77f520f61aebb8140c00c4f8554a33f178",
+                "reference": "8da8fc77f520f61aebb8140c00c4f8554a33f178",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "yiisoft/yii2": "^2.0.35"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "lubosdz\\yii2\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "lubosdz",
+                    "email": "lubosdz@gmail.com"
+                }
+            ],
+            "description": "Zero configuration templating engine for Yii ver. 2 PHP framework.",
+            "keywords": [
+                "template",
+                "templating",
+                "view renderer",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/lubosdz/yii2-template-engine/issues",
+                "source": "https://github.com/lubosdz/yii2-template-engine"
+            },
+            "time": "2021-12-14T08:40:38+00:00"
         },
         {
             "name": "mdmsoft/yii2-admin",
@@ -2449,16 +2496,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "4.1.23",
+            "version": "4.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "27d18cd5d5a1d77d3f1b01ea776238676faf5dcc"
+                "reference": "1fc3a8f4d6cf7350e1b69afd136708cfffc89e9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/27d18cd5d5a1d77d3f1b01ea776238676faf5dcc",
-                "reference": "27d18cd5d5a1d77d3f1b01ea776238676faf5dcc",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1fc3a8f4d6cf7350e1b69afd136708cfffc89e9e",
+                "reference": "1fc3a8f4d6cf7350e1b69afd136708cfffc89e9e",
                 "shasum": ""
             },
             "require": {
@@ -2535,7 +2582,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/Codeception/issues",
-                "source": "https://github.com/Codeception/Codeception/tree/4.1.23"
+                "source": "https://github.com/Codeception/Codeception/tree/4.1.24"
             },
             "funding": [
                 {
@@ -2543,7 +2590,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-12-11T18:05:26+00:00"
+            "time": "2021-12-16T12:57:06+00:00"
         },
         {
             "name": "codeception/lib-asserts",
@@ -6607,7 +6654,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,

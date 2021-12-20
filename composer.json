@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap4": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "mdmsoft/yii2-admin": "*",
-        "2amigos/yii2-ckeditor-widget": "*"
+        "2amigos/yii2-ckeditor-widget": "*",
+        "lubosdz/yii2-template-engine": "~1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
